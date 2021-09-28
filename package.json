@@ -7,13 +7,23 @@
   },
   "scripts": {
     "postinstall": "husky install && cd app && yarn install",
+    "pre-commit": "lint-staged",
     "dev": "webpack serve --mode development --config configs/webpack/config.ts",
     "build": "webpack --mode production --config configs/webpack/config.ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run format"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.+(ts|tsx|js|jsx)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.+(json|css|scss|sass|md)": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -47,6 +57,7 @@
     "fork-ts-checker-webpack-plugin": "^6.3.3",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "sass": "^1.42.1",
     "style-loader": "^3.3.0",

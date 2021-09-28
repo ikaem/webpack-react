@@ -4,11 +4,13 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react-hooks"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
   "extends": [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
+    // TODO come back to this
+    // "plugin:prettier/recommended"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
