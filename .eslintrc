@@ -9,10 +9,9 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
-    // TODO come back to this
-    // "plugin:prettier/recommended"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
