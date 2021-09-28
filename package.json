@@ -11,10 +11,8 @@
     "dev": "webpack serve --mode development --config configs/webpack/config.ts",
     "build": "webpack --mode production --config configs/webpack/config.ts"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "hooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.(ts|tsx|js|jsx)": [
