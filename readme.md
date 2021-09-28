@@ -1,0 +1,4 @@
+next
+- husky 
+- prettier
+- server 
