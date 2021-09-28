@@ -6,6 +6,7 @@
     "react-dom": "^17.0.2"
   },
   "scripts": {
+    "postinstall": "husky install && cd app && yarn install",
     "dev": "webpack serve --mode development --config configs/webpack/config.ts",
     "build": "webpack --mode production --config configs/webpack/config.ts"
   },

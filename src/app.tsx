@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const App: React.FC = () => {
-  const me = 'hat'
+  const me = 'hat';
 
   if (me) {
-    console.log
+    console.log;
   }
 
-  return <div>Karlo</div>
-}
+  return <div>Karlo</div>;
+};
 
-export default App
+export default App;
