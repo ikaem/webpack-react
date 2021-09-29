@@ -14,14 +14,11 @@
       "eslint"
     ]
   },
-
-
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-commit": "npm test"
     }
   },
-
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/plugin-external-helpers": "^7.14.5",
