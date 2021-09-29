@@ -10,7 +10,7 @@
     "build": "webpack --mode production --config configs/webpack/config.ts"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx}": [
+    "./src/**/*.{ts,tsx,js,jsx}": [
       "eslint",
       "prettier --write"
     ]
