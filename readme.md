@@ -1,4 +1,5 @@
 next
-- husky 
-- prettier
-- server 
+- server branch finish
+- webpack static thing
+- docker
+- nginx
