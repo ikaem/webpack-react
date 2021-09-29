@@ -1,9 +1,10 @@
 import React from 'react';
 
 const App: React.FC = () => {
-	const me = 'hat';
-	const m2 = 'hat';
-	const m3 = 'hat';
+	// const me = 'hat';
+	// const m2 = 'hat';
+	// const m3 = 'hat';
+	// const m4 = 'hat';
 
 	// if (me) {
 	//   console.log;
