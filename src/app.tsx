@@ -1,4 +1,5 @@
 import React from 'react';
+import paleBlueDot from './assets/pale-blue.jpg';
 
 const App: React.FC = () => {
 	// const me = 'hat';
@@ -10,7 +11,12 @@ const App: React.FC = () => {
 	//   console.log;
 	// }
 
-	return <div>Karlo</div>;
+	return (
+		<div>
+			Karlo
+			<img src={paleBlueDot} alt='' />
+		</div>
+	);
 };
 
 export default App;
